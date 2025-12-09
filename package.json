@@ -1,7 +1,7 @@
 {
     "name": "katon-solid-js",
     "private": false,
-    "version": "1.0.9",
+    "version": "1.0.10",
     "type": "module",
     "scripts": {
         "test": "vitest",
@@ -44,6 +44,7 @@
         }
     },
     "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
     "files": [
         "dist",
         "README.md"
