@@ -14,13 +14,14 @@ export default defineConfig({
             tsconfigPath: "./tsconfig.app.json",
             exclude: ["__tests__", "**/*.{spec,test}.{ts,tsx}"],
             // rollupTypes: true,
-            include: ["./src/hooks/**/*.ts", "./src/components/**/*.ts"],
+            include: ["./src/hooks/**/*.ts", "./src/components/**/*.ts", "./src/*.ts"],
         }),
     ],
     define: { "import.meta.vitest": "undefined" },
     build: {
         lib: {
             entry: {
+                index: res(_dn, "src/index.ts"),
                 // hooks
                 "hooks/index": res(_dn, "src/hooks/index.ts"),
                 "hooks/create-url-params/index": res(_dn, "src/hooks/create-url-params/index.ts"),

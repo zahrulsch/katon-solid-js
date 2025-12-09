@@ -1,7 +1,7 @@
 {
     "name": "katon-solid-js",
     "private": false,
-    "version": "1.0.7",
+    "version": "1.0.8",
     "type": "module",
     "scripts": {
         "test": "vitest",
@@ -26,6 +26,10 @@
         "solid-js": "^1.9.10"
     },
     "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
         "./hooks": {
             "import": "./dist/hooks/index.js",
             "types": "./dist/hooks/index.d.ts"
