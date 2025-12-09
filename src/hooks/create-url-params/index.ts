@@ -7,7 +7,7 @@ import { reconcile, createStore as store } from "solid-js/store"
 type ValiObject = v.ObjectSchema<v.ObjectEntries, any>
 type DeserializedOf<$schema extends ValiObject> = v.InferOutput<ModDeserialize<$schema>>
 
-export type Options<
+export type CreateUrlParamsOptions<
     $schema extends ValiObject,
     $transformFn extends TransformFn<ModDeserialize<$schema>>
 > = {
@@ -34,7 +34,7 @@ type UpdateStateInput<
 export function createUrlParams<
     $schema extends ValiObject,
     $transformFn extends TransformFn<ModDeserialize<$schema>> = DefaultTransformFm<$schema>
->(schema: $schema, options: Options<$schema, $transformFn> = {}) {
+>(schema: $schema, options: CreateUrlParamsOptions<$schema, $transformFn> = {}) {
     const location = useLocation()
     const moddedSchema = modDeserialize(schema)
     const searchParams = memo(() => params(location.search, options.rename))

@@ -1,7 +1,7 @@
 {
     "name": "katon-solid-js",
     "private": false,
-    "version": "1.0.3",
+    "version": "1.0.4",
     "type": "module",
     "scripts": {
         "test": "vitest",
@@ -27,19 +27,16 @@
     },
     "exports": {
         "./hooks": {
-            "types": "./dist/hooks/index.d.ts",
             "import": "./dist/hooks/index.js",
-            "default": "./dist/hooks/index.js"
+            "types": "./dist/hooks/index.d.ts"
         },
         "./hooks/create-url-params": {
-            "types": "./dist/hooks/create-url-params/index.d.ts",
-            "import": "./dist/hooks/create-url-params.js",
-            "default": "./dist/hooks/create-url-params.js"
+            "import": "./dist/hooks/create-url-params/index.js",
+            "types": "./dist/hooks/create-url-params/index.d.ts"
         },
         "./hooks/create-hover": {
-            "types": "./dist/hooks/create-hover/index.d.ts",
-            "import": "./dist/hooks/create-hover.js",
-            "default": "./dist/hooks/create-hover.js"
+            "import": "./dist/hooks/create-hover/index.js",
+            "types": "./dist/hooks/create-hover/index.d.ts"
         }
     },
     "files": [
