@@ -33,6 +33,7 @@ export default defineConfig({
         rollupOptions: {
             external: ["solid-js", "@solidjs/router", "solid-js/store"],
         },
+        minify: false,
     },
     test: {
         setupFiles: [
