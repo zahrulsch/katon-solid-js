@@ -54,5 +54,6 @@
         "dist",
         "README.md"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "homepage": "https://zahrulsch.github.io/katon-solid-js"
 }

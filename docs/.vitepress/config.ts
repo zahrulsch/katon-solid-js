@@ -5,6 +5,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-i
 export default defineConfig({
     title: "Katon SolidJS",
     description: "Simple SolidJS Utilities",
+    base: "/katon-solid-js/",
     themeConfig: {
         search: {
             provider: "local",
